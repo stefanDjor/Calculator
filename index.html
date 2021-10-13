@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon"/>
+    <title>Week-6-calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="header">
+                <div class="left-text">
+                    <p class="title">calc</p>
+                </div>
+                <div class="right-but">
+                    <p class="theme-text">theme</p>
+                    <div id="checkbox" class="but-numbers">
+                        <p class="one-two-three">1 2 3</p>
+                        <!-- <input value="0" id="butcheck"type="range" min="0" max="2" class="change-theme"> -->
+                        <div class="calculator__themes">
+                            <input class="calculator__theme theme1" id="default" type="radio" name="theme" value="0" checked>
+                            <!-- <label for="theme1">1</label> -->
+                            <input class="calculator__theme theme2" id="light" type="radio" value="1" name="theme">
+                            <!-- <label for="theme2">2</label> -->
+                            <input class="calculator__theme theme3" id="purple" type="radio" value="2" name="theme">
+                            <!-- <label for="theme3">3</label> -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- place for number -->
+            <div id="display" class="place-to-calculate">
+                
+            </div>
+            <!-- calc -->
+            <div  class="calc">
+                <div class="first-colum">
+                    <div class="sings numbers">7</div>
+                    <div class="sings numbers">8</div>
+                    <div class="sings numbers">9</div>
+                    <!-- <div class="sings del-reset-color numbers"><p class="numbers-del-reset">del</p></div> -->
+                    <div class="sings del-reset-color numbers-del-reset numbers">del</div>
+
+                </div>
+                <div class="second-colum">
+                    <div class="sings numbers">4</div>
+                    <div class="sings numbers">5</div>
+                    <div class="sings numbers">6</div>
+                    <div id="plus" class="sings numbers">+</div>
+                </div>
+                <div class="third-colum">
+                    <div class="sings numbers">1</div>
+                    <div class="sings numbers">2</div>
+                    <div class="sings numbers">3</div>
+                    <div class="sings numbers">-</div>
+                </div>
+                <div class="fourth-colum">
+                    <div class="sings numbers">.</div>
+                    <div class="sings numbers">0</div>
+                    <div class="sings numbers">/</div>
+                    <div class="sings numbers">*</div>
+                </div>
+                <div class="last-colum">
+                    <div id="reset" class="sings sings-second-color del-reset-color numbers numbers-del-reset">reset</div>
+                    <div id="equally" class="sings sings-second-color equally-color numbers numbers-equally ">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
