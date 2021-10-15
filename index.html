@@ -20,60 +20,53 @@
                     <p class="theme-text">theme</p>
                     <div id="checkbox" class="but-numbers">
                         <p class="one-two-three">1 2 3</p>
-                        <!-- <input value="0" id="butcheck"type="range" min="0" max="2" class="change-theme"> -->
                         <div class="calculator__themes">
                             <input class="calculator__theme theme1" id="default" type="radio" name="theme" value="0" checked>
-                            <!-- <label for="theme1">1</label> -->
                             <input class="calculator__theme theme2" id="light" type="radio" value="1" name="theme">
-                            <!-- <label for="theme2">2</label> -->
                             <input class="calculator__theme theme3" id="purple" type="radio" value="2" name="theme">
-                            <!-- <label for="theme3">3</label> -->
                         </div>
                     </div>
                     
                 </div>
             </div>
-            <!-- place for number -->
-            <div id="display" class="place-to-calculate">
-                
-            </div>
-            <!-- calc -->
+            <div class="place-to-calculate">
+                <div data-previous-operand class="previous-operand"></div>
+				<div data-current-operand class="current-operand"></div>
+              </div>
             <div  class="calc">
                 <div class="first-colum">
-                    <div class="sings numbers">7</div>
-                    <div class="sings numbers">8</div>
-                    <div class="sings numbers">9</div>
-                    <!-- <div class="sings del-reset-color numbers"><p class="numbers-del-reset">del</p></div> -->
-                    <div class="sings del-reset-color numbers-del-reset numbers">del</div>
+                    <div data-number class="sings numbers">7</div>
+                    <div data-number class="sings numbers">8</div>
+                    <div data-number class="sings numbers">9</div>
+                    <div data-delete class="sings del-reset-color numbers-del-reset numbers">del</div>
 
                 </div>
                 <div class="second-colum">
-                    <div class="sings numbers">4</div>
-                    <div class="sings numbers">5</div>
-                    <div class="sings numbers">6</div>
-                    <div id="plus" class="sings numbers">+</div>
+                    <div data-number class="sings numbers">4</div>
+                    <div data-number class="sings numbers">5</div>
+                    <div data-number class="sings numbers">6</div>
+                    <div data-operation id="plus" class="sings numbers">+</div>
                 </div>
                 <div class="third-colum">
-                    <div class="sings numbers">1</div>
-                    <div class="sings numbers">2</div>
-                    <div class="sings numbers">3</div>
-                    <div class="sings numbers">-</div>
+                    <div data-number class="sings numbers">1</div>
+                    <div data-number class="sings numbers">2</div>
+                    <div data-number class="sings numbers">3</div>
+                    <div data-operation class="sings numbers">-</div>
                 </div>
                 <div class="fourth-colum">
-                    <div class="sings numbers">.</div>
-                    <div class="sings numbers">0</div>
-                    <div class="sings numbers">/</div>
-                    <div class="sings numbers">*</div>
+                    <div data-number class="sings numbers">.</div>
+                    <div data-number class="sings numbers">0</div>
+                    <div data-operation class="sings numbers">/</div>
+                    <div data-operation class="sings numbers">x</div>
                 </div>
                 <div class="last-colum">
-                    <div id="reset" class="sings sings-second-color del-reset-color numbers numbers-del-reset">reset</div>
-                    <div id="equally" class="sings sings-second-color equally-color numbers numbers-equally ">=</div>
+                    <div  data-all-clear id="reset" class="sings sings-second-color del-reset-color numbers numbers-del-reset">reset</div>
+                    <div data-equals id="equally" class="sings sings-second-color equally-color numbers numbers-equally ">=</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- script -->
     <script src="script.js"></script>
 </body>
 </html>

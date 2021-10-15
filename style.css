@@ -76,7 +76,6 @@ html,body {
     background-color: var(--background-color);
     height: 100%;
 }
-
 .container {
     background-color: var(--background-color);
     width: 100%;
@@ -85,8 +84,7 @@ html,body {
     align-items: center;
     padding: 0 10px;
     margin: 0 auto;
-    height: 100%;
-    
+    height: 100% auto;
 }
 #display{
     overflow: hidden;
@@ -141,7 +139,6 @@ html,body {
     position: absolute;
     top: -8px;
     left: -12px;
-
 }
 .calculator__theme {
     appearance: none;
@@ -182,25 +179,37 @@ html,body {
     text-transform: uppercase;
     margin: 0;
 }
-
-.place-to-calculate {
+.place-to-calculate  {
+    grid-column: 1 / -1;
     background: var(--dark-strong);
     color: var(--white-color);
-    width: 100%;
-    height: 128px;
-    border-radius: 10px;
     display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-right: 20px;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
     font-family: 'Spartan', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 54px;
     letter-spacing: -0.8px;
-    
-    
+    border-radius: 10px;
+    min-height: 140px;
+    text-align: right;
+  }
+ 
+.calculator__input .previous-operand {
+    font-size: 15px;
+}
+.calculator__input .previous-operand,
+.calculator__input .current-operand {
+    color: var(--white);
+}
+.calculator__input .current-operand {
+    font-size: 32px;
 }
 .space-number-calculate{
     margin: 0;
@@ -327,4 +336,6 @@ body.purple .numbers-del-reset{
     .sings-second-color {
        width: 45%; 
     }
+   
   }
+  
