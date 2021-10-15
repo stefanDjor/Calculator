@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon"/>
+    <title>Week-6-calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="header">
+                <div class="left-text">
+                    <p class="title">calc</p>
+                </div>
+                <div class="right-but">
+                    <p class="theme-text">theme</p>
+                    <div id="checkbox" class="but-numbers">
+                        <p class="one-two-three">1 2 3</p>
+                        <div class="calculator__themes">
+                            <input class="calculator__theme theme1" id="default" type="radio" name="theme" value="0" checked>
+                            <input class="calculator__theme theme2" id="light" type="radio" value="1" name="theme">
+                            <input class="calculator__theme theme3" id="purple" type="radio" value="2" name="theme">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- asdasdasd -->
+            <div class="place-to-calculate">
+                <div data-previous-operand class="previous-operand"></div>
+				<div data-current-operand class="current-operand"></div>
+              </div>
+            <div  class="calc">
+                <div class="first-colum">
+                    <div data-number class="sings numbers">7</div>
+                    <div data-number class="sings numbers">8</div>
+                    <div data-number class="sings numbers">9</div>
+                    <div data-delete class="sings del-reset-color numbers-del-reset numbers">del</div>
+
+                </div>
+                <div class="second-colum">
+                    <div data-number class="sings numbers">4</div>
+                    <div data-number class="sings numbers">5</div>
+                    <div data-number class="sings numbers">6</div>
+                    <div data-operation id="plus" class="sings numbers">+</div>
+                </div>
+                <div class="third-colum">
+                    <div data-number class="sings numbers">1</div>
+                    <div data-number class="sings numbers">2</div>
+                    <div data-number class="sings numbers">3</div>
+                    <div data-operation class="sings numbers">-</div>
+                </div>
+                <div class="fourth-colum">
+                    <div data-number class="sings numbers">.</div>
+                    <div data-number class="sings numbers">0</div>
+                    <div data-operation class="sings numbers">/</div>
+                    <div data-operation class="sings numbers">x</div>
+                </div>
+                <div class="last-colum">
+                    <div  data-all-clear id="reset" class="sings sings-second-color del-reset-color numbers numbers-del-reset">reset</div>
+                    <div data-equals id="equally" class="sings sings-second-color equally-color numbers numbers-equally ">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
